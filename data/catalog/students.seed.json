@@ -1,0 +1,11 @@
+{
+  "students": [
+    {
+      "id": "STU001",
+      "name": "Maya Patel",
+      "major": "Computer Science",
+      "completed_courses": ["CS1100", "CS2100", "MATH1500"],
+      "current_enrollment": ["ENGL1010", "MATH2400"]
+    }
+  ]
+}

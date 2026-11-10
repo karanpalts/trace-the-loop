@@ -1,0 +1,9 @@
+.env
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+# yours: what you record. data/fixtures/ IS committed, so the suite replays with no key.
+data/traces/
+data/wire/
+data/results/

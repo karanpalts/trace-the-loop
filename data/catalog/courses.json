@@ -1,0 +1,378 @@
+[
+ {
+  "id": "CS1100",
+  "name": "Introduction to Programming",
+  "department": "CS",
+  "level": 1000,
+  "credits": 3,
+  "prereqs": [],
+  "schedule": {
+   "days": [
+    "M",
+    "W",
+    "F"
+   ],
+   "start_time": "08:00",
+   "end_time": "08:50"
+  },
+  "capacity": 30,
+  "enrolled_count": 28,
+  "instructor": "Prof. Adler"
+ },
+ {
+  "id": "CS2100",
+  "name": "Data Structures",
+  "department": "CS",
+  "level": 2000,
+  "credits": 3,
+  "prereqs": [
+   "CS1100"
+  ],
+  "schedule": {
+   "days": [
+    "M",
+    "W",
+    "F"
+   ],
+   "start_time": "10:00",
+   "end_time": "10:50"
+  },
+  "capacity": 25,
+  "enrolled_count": 18,
+  "instructor": "Prof. Brennan"
+ },
+ {
+  "id": "CS2200",
+  "name": "Algorithms",
+  "department": "CS",
+  "level": 2000,
+  "credits": 3,
+  "prereqs": [
+   "CS2100"
+  ],
+  "schedule": {
+   "days": [
+    "T",
+    "R"
+   ],
+   "start_time": "09:30",
+   "end_time": "11:00"
+  },
+  "capacity": 25,
+  "enrolled_count": 19,
+  "instructor": "Prof. Cole"
+ },
+ {
+  "id": "CS3000",
+  "name": "Theory of Computation",
+  "department": "CS",
+  "level": 3000,
+  "credits": 3,
+  "prereqs": [
+   "CS2200"
+  ],
+  "schedule": {
+   "days": [
+    "M",
+    "W",
+    "F"
+   ],
+   "start_time": "11:00",
+   "end_time": "11:50"
+  },
+  "capacity": 20,
+  "enrolled_count": 11,
+  "instructor": "Prof. Devereaux"
+ },
+ {
+  "id": "CS3300",
+  "name": "Database Systems",
+  "department": "CS",
+  "level": 3000,
+  "credits": 3,
+  "prereqs": [
+   "CS2100"
+  ],
+  "schedule": {
+   "days": [
+    "T",
+    "R"
+   ],
+   "start_time": "14:30",
+   "end_time": "16:00"
+  },
+  "capacity": 20,
+  "enrolled_count": 12,
+  "instructor": "Prof. Eaton"
+ },
+ {
+  "id": "CS3500",
+  "name": "Software Engineering",
+  "department": "CS",
+  "level": 3000,
+  "credits": 3,
+  "prereqs": [
+   "CS2200"
+  ],
+  "schedule": {
+   "days": [
+    "M",
+    "W",
+    "F"
+   ],
+   "start_time": "10:00",
+   "end_time": "10:50"
+  },
+  "capacity": 25,
+  "enrolled_count": 17,
+  "instructor": "Prof. Foster"
+ },
+ {
+  "id": "CS3700",
+  "name": "Web Development",
+  "department": "CS",
+  "level": 3000,
+  "credits": 3,
+  "prereqs": [
+   "CS2100"
+  ],
+  "schedule": {
+   "days": [
+    "T",
+    "R"
+   ],
+   "start_time": "16:00",
+   "end_time": "17:30"
+  },
+  "capacity": 25,
+  "enrolled_count": 14,
+  "instructor": "Prof. Garza"
+ },
+ {
+  "id": "CS4100",
+  "name": "Machine Learning",
+  "department": "CS",
+  "level": 4000,
+  "credits": 3,
+  "prereqs": [
+   "CS2100"
+  ],
+  "schedule": {
+   "days": [
+    "M",
+    "W",
+    "F"
+   ],
+   "start_time": "14:00",
+   "end_time": "14:50"
+  },
+  "capacity": 20,
+  "enrolled_count": 15,
+  "instructor": "Prof. Huang"
+ },
+ {
+  "id": "CS4200",
+  "name": "Operating Systems",
+  "department": "CS",
+  "level": 4000,
+  "credits": 3,
+  "prereqs": [
+   "CS2100"
+  ],
+  "schedule": {
+   "days": [
+    "M",
+    "W",
+    "F"
+   ],
+   "start_time": "09:00",
+   "end_time": "09:50"
+  },
+  "capacity": 20,
+  "enrolled_count": 13,
+  "instructor": "Prof. Iqbal"
+ },
+ {
+  "id": "CS4500",
+  "name": "Compilers",
+  "department": "CS",
+  "level": 4000,
+  "credits": 3,
+  "prereqs": [
+   "CS3000"
+  ],
+  "schedule": {
+   "days": [
+    "M",
+    "W",
+    "F"
+   ],
+   "start_time": "13:00",
+   "end_time": "13:50"
+  },
+  "capacity": 15,
+  "enrolled_count": 8,
+  "instructor": "Prof. Johansson"
+ },
+ {
+  "id": "MATH1500",
+  "name": "Calculus I",
+  "department": "MATH",
+  "level": 1000,
+  "credits": 4,
+  "prereqs": [],
+  "schedule": {
+   "days": [
+    "M",
+    "W",
+    "F"
+   ],
+   "start_time": "13:00",
+   "end_time": "13:50"
+  },
+  "capacity": 30,
+  "enrolled_count": 25,
+  "instructor": "Prof. Khan"
+ },
+ {
+  "id": "MATH2400",
+  "name": "Linear Algebra",
+  "department": "MATH",
+  "level": 2000,
+  "credits": 3,
+  "prereqs": [
+   "MATH1500"
+  ],
+  "schedule": {
+   "days": [
+    "T",
+    "R"
+   ],
+   "start_time": "11:00",
+   "end_time": "12:30"
+  },
+  "capacity": 25,
+  "enrolled_count": 20,
+  "instructor": "Prof. Liu"
+ },
+ {
+  "id": "MATH3100",
+  "name": "Discrete Mathematics",
+  "department": "MATH",
+  "level": 3000,
+  "credits": 3,
+  "prereqs": [
+   "MATH1500"
+  ],
+  "schedule": {
+   "days": [
+    "T",
+    "R"
+   ],
+   "start_time": "13:00",
+   "end_time": "14:30"
+  },
+  "capacity": 20,
+  "enrolled_count": 9,
+  "instructor": "Prof. Martinez"
+ },
+ {
+  "id": "ENGL1010",
+  "name": "College Writing",
+  "department": "ENGL",
+  "level": 1000,
+  "credits": 3,
+  "prereqs": [],
+  "schedule": {
+   "days": [
+    "M",
+    "W",
+    "F"
+   ],
+   "start_time": "09:00",
+   "end_time": "09:50"
+  },
+  "capacity": 25,
+  "enrolled_count": 22,
+  "instructor": "Prof. Novak"
+ },
+ {
+  "id": "ENGL2010",
+  "name": "Technical Writing",
+  "department": "ENGL",
+  "level": 2000,
+  "credits": 3,
+  "prereqs": [
+   "ENGL1010"
+  ],
+  "schedule": {
+   "days": [
+    "T",
+    "R"
+   ],
+   "start_time": "09:30",
+   "end_time": "11:00"
+  },
+  "capacity": 25,
+  "enrolled_count": 17,
+  "instructor": "Prof. Okafor"
+ },
+ {
+  "id": "BIO1100",
+  "name": "General Biology",
+  "department": "BIO",
+  "level": 1000,
+  "credits": 4,
+  "prereqs": [],
+  "schedule": {
+   "days": [
+    "M",
+    "W",
+    "F"
+   ],
+   "start_time": "11:00",
+   "end_time": "11:50"
+  },
+  "capacity": 30,
+  "enrolled_count": 24,
+  "instructor": "Prof. Patel"
+ },
+ {
+  "id": "HIST2200",
+  "name": "Modern History",
+  "department": "HIST",
+  "level": 2000,
+  "credits": 3,
+  "prereqs": [],
+  "schedule": {
+   "days": [
+    "T",
+    "R"
+   ],
+   "start_time": "13:00",
+   "end_time": "14:30"
+  },
+  "capacity": 30,
+  "enrolled_count": 21,
+  "instructor": "Prof. Quinn"
+ },
+ {
+  "id": "ART1100",
+  "name": "Drawing Foundations",
+  "department": "ART",
+  "level": 1000,
+  "credits": 3,
+  "prereqs": [],
+  "schedule": {
+   "days": [
+    "T",
+    "R"
+   ],
+   "start_time": "16:00",
+   "end_time": "17:30"
+  },
+  "capacity": 20,
+  "enrolled_count": 20,
+  "instructor": "Prof. Rivera"
+ }
+]
