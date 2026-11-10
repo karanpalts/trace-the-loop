@@ -19,7 +19,8 @@ uv sync
 ## Where everything is
 
 ```
-main_1_ask.py ... main_8_conversation.py    Section 1: one program, growing
+main_1_ask.py ... main_9_memory.py    Section 1: one program, growing
+reset.py                forget everything Main 9 saved
 ask.py                  the finished agent on any request you type
 run_suite.py            the trajectory suite
 src/agent/loop.py       the finished loop
@@ -27,6 +28,7 @@ src/agent/model.py      one HTTP POST: the wire format
 src/agent/messages.py   building and reading the conversation
 src/agent/prompt.py     the instructions
 src/agent/trace.py      one record per turn
+src/agent/memory.py     prompt memory: notes in a file, put into the instructions
 src/tools/              ONE TOOL PER FILE
 src/tools/registry.py   a function becomes a declaration
 src/tools/dispatch.py   the boundary: validate, then run
@@ -35,7 +37,7 @@ src/tools/session.py    who is asking
 
 ## Section 1 · Follow the agent
 
-One program, eight versions. Each main is complete and adds to the one before it. Run each
+One program, nine versions. Each main is complete and adds to the one before it. Run each
 when the lecture reaches it, and compare it with the last, for example
 `diff main_3_invoke.py main_4_answer.py`.
 
@@ -49,9 +51,16 @@ when the lecture reaches it, and compare it with the last, for example
 | 6 | `uv run main_6_boundary.py` | validate every call before it runs |
 | 7 | `uv run main_7_trace.py` | record every turn; the loop moves to `src/agent/loop.py` |
 | 8 | `uv run main_8_conversation.py` | keep the conversation when the loop ends |
+| 9 | `uv run main_9_memory.py` | remember across conversations: a `remember` tool, and notes put into the instructions |
 
-Each main takes your own request as an argument:
+Mains 1 to 7 take your own request as an argument:
 `uv run main_4_answer.py "Register me for two 3000-level CS courses."`
+Mains 8 and 9 are conversations: type a request, and a blank line to quit.
+
+Main 9 is the only program that keeps anything between runs: its notes, in `data/memory/`.
+Run it twice. In the first, tell it a preference and ask it to remember. In the second, ask
+for a course and watch the note in the instructions shape the answer. To start over:
+`uv run reset.py`.
 
 ## Section 2 · The tool agent
 
